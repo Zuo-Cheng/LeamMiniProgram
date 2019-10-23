@@ -1,0 +1,5 @@
+.all{
+  font-size: 20px;
+  margin-left: 30rem;
+  background-color: blue;
+}
