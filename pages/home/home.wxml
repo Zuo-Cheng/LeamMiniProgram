@@ -22,7 +22,7 @@
 <view>hello word</view> -->
 
 <!-- 第二天：常见的组件 -->
-<text space="emsp" class="all">我是一个文本：我叫{{zuocheng.name}}</text>
+<text space="emsp" class="all" >我是一个文本：我叫{{zuocheng.name}}</text>
 
 <button size="mini">我是一个按钮</button>
 <button size="defualt" type="primary" disabled="{{true}}">我是一个按钮</button>
@@ -43,3 +43,5 @@
 <input type="text" placeholder="请输入用户姓名"></input>
 
 <button bindtap="ShowMsg">点击发生点击事件</button>
+
+<button>我是知识点二</button>
