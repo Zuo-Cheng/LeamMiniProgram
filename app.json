@@ -3,5 +3,30 @@
     "pages/home/home",
     "pages/about/about"
   ],
-  "sitemapLocation": "sitemap34.json"
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "black",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "yellow",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "text",
+        "iconPath": "img/上传图标logo.png",
+        "selectedIconPath": "img/上传图标logo.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "text",
+        "iconPath": "img/用户资料logo.png",
+        "selectedIconPath": "img/用户资料logo.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
 }

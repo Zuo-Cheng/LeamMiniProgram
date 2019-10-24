@@ -1,2 +1,9 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>我是about页面</view>
+<button size="mini">我是一个小按钮</button>
+
+<view>哈哈哈哈</view>
+
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="userInfo" >点击获得用户的信息</button>
+
+<open-data type="userNickName"></open-data>
