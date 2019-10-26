@@ -10,3 +10,7 @@
 
 
 <button open-type="getUserInfo" bindgetuserinfo="getUserInf2">点击获得用户信息二</button>
+
+<view wx:for="{{movieList}}">{{item[0].Id}}</view>
+
+<view bindtap="viewClick">view这个组件也是可以监听的</view>
