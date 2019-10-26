@@ -1,0 +1,19 @@
+<!-- 密码框 -->
+<input password> </input>
+
+<!-- 文本框 -->
+<input text placeholder="请输入内容"> </input>
+
+<input type="number"></input>
+
+
+<input type="text"></input>
+
+<!-- 文本框内容更改事件 -->
+<input bindinput="inputEvent"></input>
+
+<!-- 文本框失去焦点事件 -->
+<input bindblur="blurEvent"></input>
+
+<!-- 文本框获得焦点事件 -->
+<input bindfocus="focusEvent"></input>

@@ -1,0 +1,28 @@
+/* pages/scroll-view/scroll-view.wxss */
+
+.scrollSyl_1{
+background-color: black;
+white-space: nowrap;
+}
+
+.viewSyl_1{
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+.scrollSyl_2{
+  background-color:bisque;
+  height: 250px;
+}
+
+.viewSyl_2{
+  height: 100px;
+  background-color:brown;
+  margin: 10px;
+}
+
+

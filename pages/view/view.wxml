@@ -1,0 +1,15 @@
+<view class="box1">我是一个容器，我独占一行</view>
+<view>我是一个容器，我独占一行</view>
+
+<!-- hove-class属性 -->
+<view hover-class="box2" hover-stay-time="2000">我是一个view容器</view>
+
+<view hover-class="box2" hover-start-time="3000">aaa</view>
+
+
+<view hover-class="box3">
+我是父view容器
+  <view hover-class="box4" hover-stop-propagation>
+    我是子view容器
+  </view>
+</view>

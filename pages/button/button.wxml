@@ -1,0 +1,29 @@
+
+<button>我是一个没有任何属性的按钮</button>
+<!-- size属性 -->
+<button size="mini">按钮1</button>
+<button size="mini">按钮2</button>
+<button size="default">按钮3</button>
+
+
+<!-- type属性 -->
+<button size="mini" type="default">我是按钮1</button>
+<button size="mini" type="primary">我是按钮2</button>
+<button size="mini" type="warn">我是按钮3</button>
+
+
+
+<!-- plain属性 -->
+<button size="mini" plain>镂空效果按钮</button>
+
+<!-- disabled属性 -->
+
+<button size="mini" disabled>禁用我</button>
+
+<!-- loading属性 -->
+<button size="mini" loading>loading属性的演示</button>
+
+<!-- hove-class属性 -->
+<button hover-class="btn1">按钮</button>
+
+

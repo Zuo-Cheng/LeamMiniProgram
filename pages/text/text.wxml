@@ -1,0 +1,17 @@
+
+<text>我是一个text组件\n</text>
+<text>我是一个行内组件\r\n</text>
+
+<text>我是一个行内组件\t</text>
+
+<text>我是一个行内组件\n</text>
+
+<text selectable="{{true}}">selectable的使用，看我可以选中码\n</text>
+
+<text selectable>看我是否选中\n</text>
+
+<text space="nbsp">hello word\n</text>
+<text space="emsp">hello word\n</text>
+<text space="ensp">hello word\n</text>
+
+<text decode>Kong&nbsp;ge\n</text>

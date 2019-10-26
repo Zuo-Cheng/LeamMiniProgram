@@ -1,0 +1,19 @@
+
+<button bindtap="selectImage">选择图片</button>
+<image src="{{ImagePath}}"/>
+
+<image src="../../img/03.jpg"/>
+
+<image src="/img/03.jpg"/>
+
+<image lazy-load src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+<image bindload="imagLoad" src="/img/03.jpg"></image>
+
+<image src="/img/03.jpg" show-menu-by-longpress></image>
+
+<image src="/img/03.jpg" binderror="imgError"></image>
+
+<text>我是文本</text>
+
+

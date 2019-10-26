@@ -1,0 +1,7 @@
+/* pages/button/button.wxss */
+
+.btn1{
+  background-color: yellow;
+  color: rgb(110, 39, 119);
+  font-weight: bold;
+}

@@ -1,1 +1,4 @@
 <view>hello word</view>
+
+<text >我是一个text组件</text>
+<text >我是一个行内元素</text>
