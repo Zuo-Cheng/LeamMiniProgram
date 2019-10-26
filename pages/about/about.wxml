@@ -7,3 +7,6 @@
 <button size="mini" open-type="getUserInfo" bindgetuserinfo="userInfo" >点击获得用户的信息</button>
 
 <open-data type="userNickName"></open-data>
+
+
+<button open-type="getUserInfo" bindgetuserinfo="getUserInf2">点击获得用户信息二</button>
