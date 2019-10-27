@@ -31,13 +31,42 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "wxss的使用",
+					"pathName": "pages/wxss/wxss",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wxml的使用",
+					"pathName": "pages/wxml/wxml",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"scene": null
+				}
+			]
 		}
 	}
 }

@@ -1,0 +1,9 @@
+
+<!-- 引入wxs文件 -->
+<wxs src="../../wxs/index.wxs" module="wxsObj" />
+<!-- 使用引入的wxs文件中的成员 -->
+<view>{{wxsObj.name}}</view>
+<view>{{wxsObj.age}}</view>
+
+
+<view>{{wxsObj.formatNumber(price,4)}}</view>

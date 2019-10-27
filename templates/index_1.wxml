@@ -1,0 +1,9 @@
+
+
+
+<view>我是一个文件</view>
+<view>我是一个文件</view>
+<view>我是一个文件</view>
+<view>我是一个文件</view>
+<button>我是用include引入的文件</button>
+<text>看我是否引入成功</text>

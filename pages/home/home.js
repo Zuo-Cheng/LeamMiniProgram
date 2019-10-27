@@ -29,6 +29,7 @@ Page({
       name:'左成',
       age:18,
       gender:'男'
+    
     }
     },
     btnClick(){
@@ -36,5 +37,8 @@ Page({
     },
   ShowMsg(){
     console.log('对对对');
+  },
+  addNumber(){
+    
   }
 })

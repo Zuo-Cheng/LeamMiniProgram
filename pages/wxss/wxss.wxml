@@ -1,0 +1,7 @@
+
+
+
+<!-- wxss中的rpx尺寸 -->
+<view class="box1">我是一个view容器</view>
+<view class="box2">我是一个可以改变字体大小的view容器</view>
+<view class="box3">我是应用了导入wxss的view</view>

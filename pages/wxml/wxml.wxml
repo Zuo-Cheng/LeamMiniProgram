@@ -1,0 +1,108 @@
+
+<!-- 字符串的链接 -->
+<view>{{name+"           "+age}}</view>
+
+<!-- number类型运算 -->
+<view>{{num1+num2}}</view>
+
+<!-- 使用三元运算符 -->
+<view>{{age>=18?20:age}}</view>
+
+<view>{{date}}</view>
+
+<!-- 点击切换样式的练习1 -->
+<button bindtap="viewStyle">点击切换颜色</button>
+<view class='{{isBgc==true?"bgcStyle2":"bgcStyle"}}'>{{isBgc}}</view>
+
+
+<!-- 点击切换样式的练习2 -->
+<button bindtap="viewClick">点击切换样式</button>
+<view class="{{viewStyle}}">点击切换样式</view>
+
+
+<!-- wx:if的使用 -->
+<button bindtap="isShowClick">点击显示-隐藏</button>
+<view wx:if="{{isShow}}" style="width:100px;height:100px;background-color:red;">显示或隐藏</view>
+
+
+<!-- hidden的使用 -->
+<button bindtap="isHiddenClick">点击显示隐藏</button>
+<button hidden="{{isHidden}}">我是一个按钮</button>
+
+
+<!-- wx:if的练习 -->
+<text>请输入你的成绩</text>
+<input text bindinput="inputEvent"></input>
+<button bindtap="bin1Click" >点击查询成绩</button>
+<text wx:if="{{inputTextValue>90}}">优秀</text>
+<text wx:if="{{inputTextValue>70 && inputTextValue<90}}">良好</text>
+<text wx:if="{{inputTextValue>60 && inputTextValue<70}}">一般</text>
+<text wx:if="{{inputTextValue<60}}">很差</text>
+
+<!-- ------------------------------- -->
+
+<!-- 练习上次的知识 -->
+<button bindtap="addClick_1">点击增加六分</button>
+<view wx:if="{{fenShu>90}}">优秀</view>
+<view wx:elif="{{fenShu>70}}">很好</view>
+<view wx:elif="{{fenShu>60}}">一般</view>
+<view wx:elif="{{fenShu==60}}">及格</view>
+<view wx:else="{{fenShu<60}}">不及格</view>
+
+
+
+<!-- wx:for的使用 -->
+<view wx:for="{{[1,2,3,5,8,9,57,45,12,98]}}">{{item}}==={{index}}</view>
+
+<!-- wx:for遍历字符串 -->
+<view wx:for="woshizhangsan">{{item+"======"+index}}</view>
+
+
+<!-- 遍历数字 -->
+<view wx:for="{{10}}">{{item}}</view>
+
+
+
+<!-- block的使用 -->
+
+<block wx:for="{{5}}">
+  <button>我是一个按钮</button>
+  <text>我是一个文本</text>
+  <button>我还是一个按钮 </button>
+</block>
+
+
+<!-- 给wx:for中的item和index起别名 -->
+
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}}===={{index}}</view>
+
+<!-- wx:key的使用 -->
+<view wx:for="{{movies}}" wx:key="{{item}}">{{item}}</view>
+
+<!-- 模板的使用 -->
+<template name="tm1">
+  <button>我是一个按钮</button>
+  <button>我也是一个按钮</button>
+  <view>我是一个视图</view>
+</template>
+
+<template is="tm1"></template>
+
+<!-- 创建一个模板 -->
+<template name="tm2">
+  <view>我叫：{{name}}</view>
+  <view>我的年龄是：{{age}}</view>
+</template>
+
+<!-- 使用模板 -->
+<template is="tm2" data="{{name:userName,age:userAge}}"></template>
+
+
+
+
+
+
+<!-- 模板的引用 -->
+<template src="../../templates/item.wxml"></template>
+
+<template is="temp1"></template>

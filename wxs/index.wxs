@@ -1,0 +1,27 @@
+
+// 定义参数以及方法
+var name="张三";
+var age=18;
+
+
+var num1=100;
+var num2=200;
+
+
+function add(num1,num2){
+    console.log(num1+num2)
+}
+
+
+function formatNumber(price,number){
+    var number=number || 2;
+
+    return price.toFixed(number)
+}
+
+// 导出内容
+module.exports={
+  name:name,
+  age:age,
+  formatNumber:formatNumber
+}

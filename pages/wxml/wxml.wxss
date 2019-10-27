@@ -1,0 +1,24 @@
+/* pages/wxml/wxml.wxss */
+
+
+.bgcStyle{
+  font-size:60rpx;
+}
+
+.bgcStyle2{
+  color: red;
+  font-size:60rpx;
+}
+
+
+.viewStyle1{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: red;
+}
+
+.viewStyle2{
+  width: 400rpx;
+  height: 400rpx;
+  background-color: yellow;
+}

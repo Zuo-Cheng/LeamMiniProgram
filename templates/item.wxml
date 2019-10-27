@@ -1,0 +1,6 @@
+<template name="temp1">
+  <button >我是一个按钮</button>
+  <text>我是一个文本</text>
+  <view>我是谁：{{name}}</view>
+  <text>我是template模板中的内容</text>
+</template>
