@@ -1,0 +1,9 @@
+
+
+<template name="tem1">
+      <view>下面的内容是，我是template模板中的内容</view>
+
+      <view>我叫：{{name}}</view>
+      <view>我是年龄时：{{age}}</view>
+      
+</template>

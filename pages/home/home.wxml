@@ -1,45 +1,93 @@
 
-<!-- pages/home/home.wxml
 
-<view>我是{{name}}</view>
+<button bindtap="btn1Click" size="mini">button</button>
 
-<view>{{msg}}</view>
+<button bind:tap="btn2Clickk" size="mini">button</button>
 
-<view>{{name}}</view>
+<button catch:tap="btn3Click" size="mini">button3</button>
 
+<!-- 复习wsx的使用 -->
+<wxs src="../../wxs/index.wxs" module="wxs1" />
 
-<view wx:for="{{StuObj}}">{{item.name }}</view>
+<view>我叫：{{wxs1.name}}</view>
+<view>我的年龄是：{{wxs1.age}}</view>
 
-<button size="mini" bindtap="btnClick()">点击我</button>
-
-
-<text>{{num}}</text>
-
+<view>{{wxs1.add(10,20)}}</view>
 
 
-<button bindtap="btn2Click">点击加一</button>
 
-<view>hello word</view> -->
+<!-- 复习template的使用 -->
 
-<!-- 第二天：常见的组件 -->
-<text space="emsp" class="all">我是一个文本：我叫{{zuocheng.name}}</text>
+<template name="tm1">
+<view>下面是我练习template模板中的内容</view>
+    <view>大叫好 我是：{{name}}</view>
+    <view>我的年龄是:{{age}}</view>
+</template>
 
-<button size="mini">我是一个按钮</button>
-<button size="defualt" type="primary" disabled="{{true}}">我是一个按钮</button>
-
-<button disabled="disabled" loading="{{true}}">我是一个按钮</button>
-
-<button hover-class="btnStryle">点击发生样式</button>
+<template is="tm1" data="{{name:wxs1.name,age:wxs1.age}}"></template>
 
 
-<button class="claStyle" wx-plain="btnClick">添加一个类样式</button>
+<view>---------------------事件----------------------</view>
 
-<image src="../../img/03.jpg"></image>
+<!-- 注册事件的四种写法 -->
+<!-- 第一种写法：bindtap -->
+<button bindtap="btnClick1" size="mini">按钮1</button>
+<!-- 第二种写法：bind:tap -->
+<button bind:tap="btnClick2" size="mini">按钮2</button>
+<!-- 第三种写法：cathctap -->
+<button catchtap="btnClick3" size="mini">按钮3</button>
+<!-- 第四种写法：catch:tap -->
+<button catch:tap="btnClick4" size="mini">按钮4</button>
+
+<view>----------------------手指点击时事件</view>
+<!-- 手指点击时触发 -->
+<button size="mini" bindtouchstart="touchstartClick">按钮1</button>
+
+<!-- 手指点击移动时触发 -->
+<button size="mini" bindtouchmove="touchmoveEvent">按钮2</button>
+
+<!-- 手指点击移动结束时触发 -->
+<button bindtouchend="touchendEvent" size="mini">按钮3</button>
+
+<!-- 手指点击超过350ms(时间)触发 -->
+<button bindlongtap="longtapEvent" size="mini">按钮4</button>
+
+<!-- 手指点击时触发 -->
+<button id="btn1" size="mini" bindtap="clickEvent">按钮5</button>
+
+<!-- 手指点击超过350ms(时间)触发 -->
+<button bindlongpress="longpressEvent">按钮6</button>
+
+<view>---------------------事件对象的解析---------</view>
+<view size="mini" bindtap="tapEvent1">事件对象的点击</view>
 
 
-<input type="text" value="zhangsan" class="txtStyle"></input>
-<input type="password" class="numberStyle"></input>
 
-<input type="text" placeholder="请输入用户姓名"></input>
+<view>----------------事件传递参数</view>
+<view id="block_1">
+  <block >
+    <view 
+        id="view_1" 
+        wx:for="{{movieList}}" 
+        wx:key="{{index}}"
+        data-index="{{index}}"
+        data-item="{{item}}"
+        bindtap="viewClickEvent"
+    >{{item}}     
+    </view>
+  </block>
+</view>
 
-<button bindtap="ShowMsg">点击发生点击事件</button>
+
+<view>--------------------------事件冒泡和事件捕获</view>
+
+<!-- //事件冒泡 -->
+<view class="view1" bindtap="view1Click">
+我是第一层得view
+  <view class="view2" bindtap="view2Click">
+    我是第二层得view
+    <view class="view3" bindtap="view3Click">
+        我是最里面得view
+    </view>
+  </view>
+</view>

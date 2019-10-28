@@ -1,0 +1,15 @@
+
+
+var name="张三";
+var age=18;
+
+function add(a,b){
+  return a+b
+}
+
+
+module.exports={
+  name:name,
+  age:age,
+  add:add
+}

@@ -1,40 +1,80 @@
-
-// 第一天的内容
-// Page({
-//   data:{
-//     name:'lisi',
-//     msg:'大家好我叫左成，我会打代码',
-//     movies:['张三','李四','王五','赵六','田七','赵久'],
-//     StuObj:[
-//       { name: '张三', age: 18, gender: '男' },
-//       { name: '李四', age: 20, gender: '女' },
-//       { name: '王五', age: 36, gender: '男' }
-//     ],
-//     num:0
-//   },
-//     btnClick(){
-//       this.setData({
-//       })
-//     },
-//   btn2Click(){
-//     this.setData({
-//       num:this.data.num+1
-//     })
-//   }
-// })
-
 Page({
   data:{
-    zuocheng:{
-      name:'左成',
-      age:18,
-      gender:'男'
-    }
-    },
-    btnClick(){
-      console.log('打印了我')
-    },
-  ShowMsg(){
-    console.log('对对对');
+    movieList:['星球大战','七宗罪','天下无贼']
+  },
+  btn1Click(){
+    console.log('111')
+  },
+  btn2Clickk(){
+    console.log('btn2')
+  },
+  btn3Click(){
+    console.log('ben3')
+  },
+  btnClick1(){
+    console.log('按钮1发生了点击')
+  },
+  btnClick2(){
+    console.log('按钮2发生了点击')
+  },
+  btnClick3(){
+    console.log('按钮3发生了点击')
+  },
+  btnClick4(){
+    console.log('按钮4发生了点击')
+  },
+  touchstartClick(){
+    console.log('按钮点击时事件触发了')
+  },
+  touchmoveEvent(){
+    console.log('触摸时移动触发')
+  },
+  touchendEvent(){
+    console.log('触摸结束时触发')
+  },
+  longtapEvent(){
+    console.log('手指触摸后，超过350ms时触发')
+  },
+  clickEvent(e){
+    console.log(e)
+    console.log(e.type)
+    wx.getUserInfo({
+      success:function(info){
+          console.log(info.userInfo.nickName)
+      }
+      
+    })
+  },
+  longpressEvent(){
+    console.log('手指触摸时超过350ms时触发')
+  },
+  //事件对象的解析
+  tapEvent1(e){
+    console.log(e)
+    //获得打开页面到点击触发这个事件，所经过的时间
+    console.log(e.timeStamp)
+    //获得事件类型（比如：点击事件时tap，那么这个type获得的就是tap）
+    console.log(e.type)
+    //获得触发事件的组件的属性集合（这个包含了当前触发这个事件的组件的属性集合)
+    console.log(e.target)
+    //获得当前触发这个事件的组件的集合（这个和target差不多）
+    console.log(e.currentTarget)
+    //获得额外信息
+    console.log(e.detail)
+  },
+  viewClickEvent(e){
+    console.log(e.currentTarget.dataset.index)
+    console.log(e.currentTarget.dataset.item)
+  },
+  view1Click(){
+    console.log('我是最外面得view')
+  },
+  view2Click() {
+    console.log('我是第二层view')
+  },
+  view3Click() {
+    console.log('我是最里面得view')
   }
+
+  
 })

@@ -1,32 +1,30 @@
-/* pages/home/home.wxss */
-@import "../../css/exercise.wxss";
-.txtTitle{
-  color: red;
-  font-size: 30px;
-  
-}
 
 
-.btnStryle{
-  color: yellow;
-  border-radius: 10px;
-  background-color: black;
-}
-
-.claStyle{
-  background-color: rgb(122, 80, 80);
-  size:18px;
-  font-weight: bold;
-  font-family: '微软雅黑';
-}
-
-.txtStyle{
-  border: 1px solid red;
+#block_1{
   background-color: yellow;
-  width: 100px;
+  display: flex;
 }
 
-.numberStryle{
-  background-color: gainsboro;
-  
+#view_1{
+  background-color: yellow;
+  flex: 1;
+  text-align: center;
+}
+
+.view1{
+  width: 500rpx;
+  height: 500rpx;
+  background-color: red;
+}
+
+.view2{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: yellow;
+}
+
+.view3{
+  width: 200rpx;
+  height: 200rpx;
+  background-color:gray;
 }
